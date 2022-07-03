@@ -1,1 +1,1 @@
-# portfolio-website
+# Hi, I am Ani, Motivated junior Front end developer  with experience building unbreakable and elegant JavaScript Projects looking for an opportunity to grow front-end development skills in an innovative environment.
