@@ -174,3 +174,127 @@ right:0;
 margin: auto;
 
 }
+/* home */
+.main {
+    margin-left:100px ;
+}
+
+/* layout */
+.container {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right:auto ;
+}
+.grid {
+    display: grid;
+}
+
+/* home section */
+.home {
+    background: url(/imgs/V4N8i3.jpg);
+background-size: cover;
+background-position: center center;
+height: 100vh;
+}
+.home__container{
+    position: relative;
+    height: 100%;
+    align-items: center;
+}
+.home__social {
+    position:absolute;
+    display: flex;
+    align-items: center;
+    top:1.8rem;
+    left: 0;
+    column-gap: 3.5rem;
+}
+
+.home__social-follow{
+   position: relative;
+font-weight: var(--font-medium);
+
+
+}
+.home__social-follow::after{
+    content: '';
+    width: 1rem;
+    height: 2px;
+    background-color: var(--text-color);
+    right:-45% ;
+}
+.home__social-links {
+    display: inline-flex;
+    column-gap: 1rem;
+
+}
+.home__social-link{
+    font-size: 1.08rem;
+    color: var(--text-color);
+    transition: .4s;
+}
+.home__social-link:hover{
+    transform: translateY(.25rem);
+}
+
+.home__img{
+    display: none;
+}
+.home__title{
+    font-size: var(--biggest-font-size);
+}
+.home__subtitle {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-75);
+}
+.home__description{
+   max-width: 450px; 
+   margin-bottom: var(--mb-2);
+}
+.my__info{
+    position: absolute;
+    display: flex;
+    column-gap: 1.8rem;
+    left: 0;
+    bottom: 1.8rem;
+
+}
+.info_item {
+    display: flex;
+    align-items: center;
+}
+.info__title,
+.info__subtitle {
+    font-size:var(--small-font-size);
+}
+.info__title{
+    font-weight: var(--font-medium);
+}
+.info__icon{
+    font-size: 1.8rem;
+    color: var(--skin-color);
+    margin-right: var(--mb-0-75);
+}
+
+/* buttons */
+.button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.15rem;
+    background-color: var(--skin-color);
+    color: var(--title-color);
+    padding:.70rem 1.4rem ;
+    border-radius: .25rem;
+    font-weight: var(--font-medium);
+    z-index: 1;
+}
+.button::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
