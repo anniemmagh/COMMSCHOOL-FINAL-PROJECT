@@ -298,3 +298,22 @@ font-weight: var(--font-medium);
     width: 100%;
     height: 100%;
 }
+/* Reusable css classes */
+.section {
+    padding: 6.5rem 0.2rem;
+
+}
+.section__title{
+    text-align: center;
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-3);
+
+
+}
+.section__title::before{
+    content:attr(data-heading) ;
+    display: block;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--skin-color);
+}
