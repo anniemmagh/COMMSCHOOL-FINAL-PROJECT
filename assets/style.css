@@ -483,3 +483,13 @@ input {
     font-size: var(--small-font-size);
     color: var(--skin-color);
 }
+/* Skills section */
+.skills__container{
+    grid-template-columns: 360px 320px;
+    column-gap: 3rem;
+    justify-content: center;
+}
+.skills__header {
+    display: flex;
+    cursor: pointer;
+}
