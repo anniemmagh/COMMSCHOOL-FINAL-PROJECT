@@ -493,3 +493,21 @@ input {
     display: flex;
     cursor: pointer;
 }
+.skill__header:not(:last-child){
+    margin-bottom: :var(var(--mb-2-5));
+
+}
+.skills__icon,
+.skills__arrow{
+    font-size: 2rem;
+    color: var(--skin-color);
+}
+.skills__icon{
+    margin-right: var(--mb-0-75);
+}
+.skills__subtitle{
+    font-size: var(--small-font-size);
+}
+.skills__arrow{
+    margin-left: auto;
+}
