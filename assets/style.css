@@ -597,6 +597,37 @@ padding: 1rem;
     padding: 1.25rem;
     border-radius:.5rem ;
 }
+.portfolio__item-details{
+    display: none;
+
+}
+.work__img{
+    border-radius: .5rem;
+    margin-bottom: var(--mb-1);
+}
+.work__title{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-5);
+}
+.work__button{
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+    cursor: pointer;
+    color: var(--skin-color);
+    font-size: var(--small-font-size);
+}
+.work__button-icon{
+   font-size: 1rem; 
+   transition: .3s;
+}
+.work__button:hover .work__button-icon{
+    transform: translateX(.25rem);
+}
+
+
+
 /* active item work */
 .active-work{
     background-color: var(--skin-color);
