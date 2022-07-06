@@ -126,7 +126,7 @@ input {
     position: absolute;
     left: 0;
     right: 0;
-    top: 1.5rem;
+    top: 1.8rem;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -138,7 +138,7 @@ input {
 .nav__logo-text {
     font-size: 1.125rem;
     color: var(--title-color);
-    font-weight: var (--font-bold);
+    font-weight: var(--font-bold);
     line-height: 40px;
 }
 
@@ -171,13 +171,7 @@ input {
     transition: .4s;
 }
 
-.btn__share {
-    position: absolute;
-    bottom: 1.8rem;
-    left: 0;
-    right: 0;
-    text-align: center;
-}
+
 
 /* =====active link===== */
 .nav__link.active-link,
@@ -196,7 +190,7 @@ input {
     bottom: 1.8rem;
     left: 0;
     right: 0;
-    margin: auto;
+    text-align: center;
 
 }
 
@@ -218,7 +212,7 @@ input {
 
 /* home section */
 .home {
-    background: url(/imgs/V4N8i3.jpg);
+    background: url();
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -326,7 +320,7 @@ input {
     column-gap: 0.15rem;
     background-color: var(--skin-color);
     color: var(--title-color);
-    padding: .70rem 1.4rem;
+    padding: .75rem 1.4rem;
     border-radius: .25rem;
     font-weight: var(--font-medium);
     z-index: 1;
@@ -339,6 +333,13 @@ input {
     top: 0;
     width: 100%;
     height: 100%;
+    background-color: var(--box-color);
+    z-index: -1;
+    transform: scale(0);
+    border-radius: .25rem;
+}
+.button:hover{
+    transform: scale(1);
 }
 
 /* Reusable css classes */
@@ -530,7 +531,7 @@ input {
 .skills__arrow {
     margin-left: auto;
 }
-.skills__active .skills__arrow{
+.skills__active .skills__arrow {
 transform: rotate(-90deg);
 transition: .3s;
 }
