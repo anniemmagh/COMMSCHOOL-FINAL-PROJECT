@@ -670,3 +670,24 @@ padding: 1rem;
     color: var(--skin-color);
     cursor: pointer;
 }
+.portfolio__popup-img {
+    border-radius:.5rem ;
+}
+.portfolio__popup-subtitle {
+    font-size: var(--smaller-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+.details__title{
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+}
+.details__description{
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-2);
+}
+.details__info li {
+    margin-bottom:var(--mb-0-75) ;
+    text-transform: capitalize;
+    font-size: var(--small-font-size);
+}
