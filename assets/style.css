@@ -633,3 +633,40 @@ padding: 1rem;
     background-color: var(--skin-color);
 
 }
+/* portfolio popup */
+.portfolio__popup{
+    
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgb(0,0,0,0.5) ;
+    z-index:var(--z-modal) ;
+    transition: .3s;
+}
+.portfolio__popup-inner {
+    position: relative;
+    background-color: var(--box-color);
+    width: 900px;
+    border-radius: .5rem;
+    padding: 2.5rem;
+
+}
+.portfolio__popup-content{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+
+}
+.portfolio__popup-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size:1.5rem ;
+    color: var(--skin-color);
+    cursor: pointer;
+}
