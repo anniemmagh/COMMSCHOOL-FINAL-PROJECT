@@ -29,21 +29,24 @@ let mixerPortfolio = mixitup('.work__container', {
     }
 });
 /////////links active work//////
-const linkWork=document.querySelectorAll('.work__item')
+const linkWork =document.querySelectorAll('.work__item')
 function activeWork() {
-    linkWork.forEach(L=>I.classList.remove('active-work'))
+    linkWork.forEach(l => I.classList.remove('active-work'))
     this.classList.add('active-work')
 }
-linkWork.forEach(L=>I.addEventListener("click",activeWork))
-
+linkWork.forEach(l => I.addEventListener('click', activeWork))
 /////popupjs///////
 
 document.addEventListener('click',(e) =>{
 if(e.target.classList.contains("work__button")){
     togglePortfoliopopup();
+    portfolioDetails(e.target.parentElement);
 }
 })
 function   togglePortfoliopopup(){
     document.querySelector(".portfolio__popup").classList.toggle("open")
 }
 document.querySelector(".portfolio__popup-close").addEventListener('click',togglePortfoliopopup)
+function portfolioDetails(portfolioitem ) {
+    console.log(portfolioitem)
+}

@@ -122,25 +122,7 @@ input {
     border-right: 1px solid var(--box-color);
 }
 
-.nav__logo {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 1.8rem;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--skin-color);
-    text-align: center;
-    margin: auto;
-}
 
-.nav__logo-text {
-    font-size: 1.125rem;
-    color: var(--title-color);
-    font-weight: var(--font-bold);
-    line-height: 40px;
-}
 
 .nav__menu {
     position: fixed;
@@ -659,14 +641,14 @@ padding: 1rem;
     padding: 2.5rem;
 
 }
-.portfolio__popup-open{
+.portfolio__popup.open{
     opacity: 1;
     visibility: visible;
 }
 .portfolio__popup-content{
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns:repeat(2, 1 fr);
     align-items: center;
-
+column-gap: 3rem;
 }
 .portfolio__popup-close {
     position: absolute;
@@ -678,7 +660,7 @@ padding: 1rem;
 }
 .portfolio__popup-img {
     border-radius:.5rem ;
-    margin-left:-5px ;
+    /* margin-left:-5px ; */
 }
 .portfolio__popup-subtitle {
     font-size: var(--smaller-font-size);
