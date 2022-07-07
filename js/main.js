@@ -48,5 +48,11 @@ function   togglePortfoliopopup(){
 }
 document.querySelector(".portfolio__popup-close").addEventListener('click',togglePortfoliopopup)
 function portfolioDetails(portfolioitem ) {
-    console.log(portfolioitem)
+    document.querySelector('.pp_thumbnail img').src=portfolioitem.querySelector('.work__img').src;
+document.querySelector('.portfolio__popup span').innerHTML=portfolioitem.querySelector(
+    '.work__title'
+).innerHTML;
+document.querySelector('.portfolio__popup-body').innerHTML=portfolioitem.querySelector(
+    '.portfolio__item-details'
+).innerHTML;
 }
