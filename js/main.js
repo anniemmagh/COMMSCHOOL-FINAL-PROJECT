@@ -35,3 +35,15 @@ function activeWork() {
     this.classList.add('active-work')
 }
 linkWork.forEach(L=>I.addEventListener("click",activeWork))
+
+/////popupjs///////
+
+document.addEventListener('click',(e) =>{
+if(e.target.classList.contains("work__button")){
+    togglePortfoliopopup();
+}
+})
+function   togglePortfoliopopup(){
+    document.querySelector(".portfolio__popup").classList.toggle("open")
+}
+document.querySelector(".portfolio__popup-close").addEventListener('click',togglePortfoliopopup)
