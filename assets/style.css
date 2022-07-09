@@ -979,6 +979,7 @@ textarea.input {
 .footer__social {
     color: var(--title-color);
 }
+
 /*=============== SCROLL UP ===============*/
 .scrollup {
     position: fixed;
@@ -1006,6 +1007,7 @@ textarea.input {
 .show-scroll {
     bottom: 3rem;
 }
+
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
     width: .60rem;
