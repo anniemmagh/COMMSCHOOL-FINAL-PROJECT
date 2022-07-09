@@ -697,3 +697,28 @@ padding: 1rem;
     text-transform: lowercase;
     color: var(--skin-color);
 }
+/* contact section css  */
+.contact__container {
+    grid-template-columns: 300px 340px;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__info {
+    display: grid;
+    row-gap: 1rem;
+}
+
+.contact__card {
+    background-color: var(--box-color);
+    padding: 1rem;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.contact__card-icon {
+    font-size: 1.6rem;
+    color: var(--title-color);
+    margin-bottom: var(--mb-0-25);
+}
