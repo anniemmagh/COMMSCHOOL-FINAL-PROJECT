@@ -979,7 +979,33 @@ textarea.input {
 .footer__social {
     color: var(--title-color);
 }
+/*=============== SCROLL UP ===============*/
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -30%;
+    background: var(--skin-color);
+    border-radius: .4rem;
+    display: inline-flex;
+    padding: .25rem;
+    z-index: 10000;
+    opacity: .8;
+    transition: .4s;
+}
 
+.scrollup:hover {
+    opacity: 1;
+}
+
+.scrollup__icon {
+    font-size: 1.5rem;
+    color: var(--title-color);
+}
+
+/* Show Scroll Up*/
+.show-scroll {
+    bottom: 3rem;
+}
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
     width: .60rem;
