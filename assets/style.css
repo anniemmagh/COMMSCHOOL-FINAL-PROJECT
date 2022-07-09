@@ -403,7 +403,6 @@ input {
     grid-template-columns: repeat(2, 340px);
     column-gap: 3rem;
     justify-content: center;
-
 }
 
 .qualification__title {
@@ -414,8 +413,8 @@ input {
 
 .timeline__item {
     position: relative;
-    margin-bottom: var(--mb-2-5);
     padding-left: 3rem;
+    margin-bottom: var(--mb-2-5);
 }
 
 .timeline__item:last-child {
@@ -426,7 +425,7 @@ input {
     content: '';
     width: 1px;
     position: absolute;
-    left: 0.48rem;
+    left: .47rem;
     top: 0;
     height: 100%;
     background-color: var(--skin-color);
@@ -444,7 +443,7 @@ input {
     transition: .3s;
 }
 
-.timeline__item:hover {
+.timeline__item:hover .circle__dot {
     background-color: var(--body-color);
 }
 
@@ -466,7 +465,6 @@ input {
     font-size: var(--small-font-size);
     color: var(--skin-color);
 }
-
 /* Skills section */
 .skills__container {
     justify-content: center;
