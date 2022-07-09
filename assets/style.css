@@ -320,7 +320,8 @@ input {
     transform: scale(0);
     border-radius: .25rem;
 }
-.button:hover{
+
+.button:hover {
     transform: scale(1);
 }
 
@@ -465,6 +466,7 @@ input {
     font-size: var(--small-font-size);
     color: var(--skin-color);
 }
+
 /* Skills section */
 .skills__container {
     justify-content: center;
@@ -511,14 +513,17 @@ input {
 .skills__arrow {
     margin-left: auto;
 }
+
 .skills__active .skills__arrow {
-transform: rotate(-90deg);
-transition: .3s;
+    transform: rotate(-90deg);
+    transition: .3s;
 }
-.skills [data-content]{
+
+.skills [data-content] {
     display: none;
 }
-.skills__active[data-content]{
+
+.skills__active[data-content] {
     display: block;
 }
 
@@ -549,14 +554,16 @@ transition: .3s;
     display: block;
     background-color: var(--skin-color);
 }
+
 /* work section */
 .work__container {
-    grid-template-columns:repeat(3 ,330px) ;
-gap: 1.8rem;
-justify-content: center;
-padding: 1rem;
+    grid-template-columns: repeat(3, 330px);
+    gap: 1.8rem;
+    justify-content: center;
+    padding: 1rem;
 
 }
+
 .work__filters {
     display: flex;
     justify-content: center;
@@ -564,6 +571,7 @@ padding: 1rem;
     column-gap: .75rem;
     margin-bottom: 2rem;
 }
+
 .work__item {
     cursor: pointer;
     color: var(--title-color);
@@ -572,25 +580,29 @@ padding: 1rem;
     border-radius: .5rem;
 }
 
-.work__card{
+.work__card {
     background-color: var(--box-color);
     padding: 1.25rem;
-    border-radius:.5rem ;
+    border-radius: .5rem;
 }
-.portfolio__item-details{
+
+.portfolio__item-details {
     display: none;
 
 }
-.work__img{
+
+.work__img {
     border-radius: .5rem;
     margin-bottom: var(--mb-1);
 }
-.work__title{
+
+.work__title {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-0-5);
 }
-.work__button{
+
+.work__button {
     display: flex;
     align-items: center;
     column-gap: .25rem;
@@ -598,21 +610,24 @@ padding: 1rem;
     color: var(--skin-color);
     font-size: var(--small-font-size);
 }
-.work__button-icon{
-   font-size: 1rem; 
-   transition: .3s;
+
+.work__button-icon {
+    font-size: 1rem;
+    transition: .3s;
 }
-.work__button:hover .work__button-icon{
+
+.work__button:hover .work__button-icon {
     transform: translateX(.25rem);
 }
 
 
 
 /* active item work */
-.active-work{
+.active-work {
     background-color: var(--skin-color);
 
 }
+
 /* portfolio popup */
 .portfolio__popup {
     position: fixed;
@@ -697,13 +712,14 @@ padding: 1rem;
     text-transform: lowercase;
     color: var(--skin-color);
 }
+
 /* contact section css  */
 .contact__container {
     justify-content: center;
     align-items: center;
     grid-template-columns: 300px 340px;
     column-gap: 3rem;
-    
+
 }
 
 .contact__info {
@@ -723,17 +739,21 @@ padding: 1rem;
     color: var(--title-color);
     margin-bottom: var(--mb-0-25);
 }
+
 .contact__card-title,
-.contact__card-data{
+.contact__card-data {
     font-size: var(--small-font-size);
 }
-.contact__card-title{
+
+.contact__card-title {
     font-weight: var(--font-medium);
 }
+
 .contact__card-data {
     display: block;
     margin-bottom: var(--mb-0-75);
 }
+
 .contact__button {
     display: flex;
     align-items: center;
@@ -744,13 +764,16 @@ padding: 1rem;
     font-size: var(--small-font-size);
 
 }
+
 .contact__button-icon {
     font-size: 1rem;
     transition: .3s;
 }
+
 .contact__button:hover .contact__button-icon {
     transform: translateX(.25rem);
 }
+
 .input__container {
     position: relative;
     margin-top: .1rem;
@@ -796,6 +819,7 @@ textarea.input {
     top: 1rem;
     transform: translateY(0);
 }
+
 .input__container span {
     position: absolute;
     top: 0;
@@ -841,6 +865,7 @@ textarea.input {
     width: 50%;
     opacity: 1;
 }
+
 /* Footer css */
 .footer {
     padding-top: 2rem;
@@ -953,7 +978,7 @@ textarea.input {
         transform: translateX(0);
     }
 
-    
+
     .btn__share {
         display: none;
     }
@@ -978,7 +1003,8 @@ textarea.input {
         line-height: 1.5;
     }
 
-    .nav__link.active-link::after, .nav__link:hover::after {
+    .nav__link.active-link::after,
+    .nav__link:hover::after {
         bottom: 0;
     }
 
@@ -1044,7 +1070,7 @@ textarea.input {
         margin-bottom: var(--mb-0-25);
     }
 
-    
+
     .portfolio__item-details {
         margin-bottom: var(--mb-1-5);
     }
@@ -1185,13 +1211,7 @@ textarea.input {
         padding: 0;
     }
 
-    .services__modal-content {
-        padding: 4.5rem 1.5rem 2.5rem;
-    }
 
-    .services__modal-description {
-        padding: 0;
-    }
 
     .contact__container,
     .work__container {
@@ -1251,6 +1271,3 @@ textarea.input {
     }
 
 }
-
-
-
