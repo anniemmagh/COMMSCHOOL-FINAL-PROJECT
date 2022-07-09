@@ -699,10 +699,11 @@ padding: 1rem;
 }
 /* contact section css  */
 .contact__container {
-    grid-template-columns: 300px 340px;
-    column-gap: 3rem;
     justify-content: center;
     align-items: center;
+    grid-template-columns: 300px 340px;
+    column-gap: 3rem;
+    
 }
 
 .contact__info {
@@ -721,4 +722,32 @@ padding: 1rem;
     font-size: 1.6rem;
     color: var(--title-color);
     margin-bottom: var(--mb-0-25);
+}
+.contact__card-title,
+.contact__card-data{
+    font-size: var(--small-font-size);
+}
+.contact__card-title{
+    font-weight: var(--font-medium);
+}
+.contact__card-data {
+    display: block;
+    margin-bottom: var(--mb-0-75);
+}
+.contact__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .25rem;
+    cursor: pointer;
+    color: var(--skin-color);
+    font-size: var(--small-font-size);
+
+}
+.contact__button-icon {
+    font-size: 1rem;
+    transition: .3s;
+}
+.contact__button:hover .contact__button-icon {
+    transform: translateX(.25rem);
 }
