@@ -1,3 +1,25 @@
+/*=============== SHOW SIDEBAR ===============*/
+const navMenu = document.getElementById('sidebar'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close')
+
+/*===== SIDEBAR SHOW =====*/
+
+if(navToggle) {
+    navToggle.addEventListener("click", () => {
+        navMenu.classList.add('show-sidebar')
+    })
+}
+
+/*===== SIDEBAR HIDDEN =====*/
+
+if(navClose) {
+    navClose.addEventListener("click", () => {
+        navMenu.classList.remove('show-sidebar')
+    })
+}
+
+
 //////////skills Tab starts////////
 const tabs = document.querySelectorAll('[data-target]'),
     tabContent = document.querySelectorAll('[data-content]')

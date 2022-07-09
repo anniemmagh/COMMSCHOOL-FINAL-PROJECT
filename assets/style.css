@@ -120,8 +120,34 @@ input {
     height: 100vh;
     background-color: var(--body-color);
     border-right: 1px solid var(--box-color);
+    transition: .5s;
 }
 
+.nav__toggle {
+    height: 32px;
+    width: 36px;
+    cursor: pointer;
+    position: fixed;
+    right: 1.5rem;
+    top: 2rem;
+    font-size: 1.2rem;
+    border-radius: .25rem;
+    background-color: var(--skin-color);
+    color: var(--title-color);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: var(--z-fixed);
+}
+
+.nav__close {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1.25rem;
+    cursor: pointer;
+    display: none;
+}
 
 
 .nav__menu {
@@ -133,7 +159,6 @@ input {
 
 .menu {
     display: flex;
-
 }
 
 .nav__list {
@@ -143,15 +168,44 @@ input {
 }
 
 .nav__link {
-    position: relative;
     float: right;
     height: 100%;
     line-height: 100px;
     padding: 0 1rem;
     color: var(--title-color);
     font-weight: var(--font-medium);
+    position: relative;
     transition: .4s;
 }
+
+
+
+.nav__toggle {
+    height: 32px;
+    width: 36px;
+    cursor: pointer;
+    position: fixed;
+    right: 1.5rem;
+    top: 2rem;
+    font-size: 1.2rem;
+    border-radius: .25rem;
+    background-color: var(--skin-color);
+    color: var(--title-color);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: var(--z-fixed);
+}
+
+.nav__close {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1.25rem;
+    cursor: pointer;
+    display: none;
+}
+
 
 
 
