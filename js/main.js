@@ -42,9 +42,6 @@ tabs.forEach(tab => {
         tab.classList.add('skills__active')
     })
 })
-
-
-// /mixitup filter js///////
 let mixerPortfolio = mixitup('.work__container', {
     selectors: {
         target: '.work__card'
@@ -54,30 +51,37 @@ let mixerPortfolio = mixitup('.work__container', {
     }
 });
 
+/*===== Link Active Work =====*/
+const linkWork = document.querySelectorAll('.work__item')
 
-/////popupjs///////
+function activeWork() {
+    linkWork.forEach(l=> l.classList.remove('active-work'))
+    this.classList.add('active-work')
+}
 
-document.addEventListener('click', (e) => {
-    if (e.target.classList.contains("work__button")) {
-        togglePortfoliopopup();
-        portfolioDetails(e.target.parentElement);
+linkWork.forEach(l=> l.addEventListener("click", activeWork))
+
+/*===== Work Popup =====*/
+document.addEventListener("click", (e) => {
+    if(e.target.classList.contains("work__button")) {
+        togglePortfolioPopup();
+        portfolioItemDetails(e.target.parentElement);
     }
 })
 
-function togglePortfoliopopup() {
-    document.querySelector(".portfolio__popup").classList.toggle("open")
+function togglePortfolioPopup() {
+    document.querySelector(".portfolio__popup").classList.toggle("open");
 }
-document.querySelector(".portfolio__popup-close").addEventListener('click', togglePortfoliopopup)
 
-function portfolioDetails(portfolioitem) {
-    document.querySelector('.pp_thumbnail img').src = portfolioitem.querySelector('.work__img').src;
-    document.querySelector('.portfolio__popup span').innerHTML = portfolioitem.querySelector(
-        '.work__title'
-    ).innerHTML;
-    document.querySelector('.portfolio__popup-body').innerHTML = portfolioitem.querySelector(
-        '.portfolio__item-details'
-    ).innerHTML;
+document.querySelector(".portfolio__popup-close").addEventListener("click", togglePortfolioPopup)
+
+
+function portfolioItemDetails(portfolioItem) {
+    document.querySelector(".pp__thumbnail img").src = portfolioItem.querySelector(".work__img").src;
+    document.querySelector(".portfolio__popup-subtitle span").innerHTML = portfolioItem.querySelector(".work__title").innerHTML;
+    document.querySelector(".portfolio__popup-body").innerHTML = portfolioItem.querySelector(".portfolio__item-details").innerHTML;
 }
+
 /*=============== INPUT ANIMATION ===============*/
 const inputs = document.querySelectorAll(".input");
 
