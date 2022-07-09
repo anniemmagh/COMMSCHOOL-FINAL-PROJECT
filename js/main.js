@@ -1,11 +1,11 @@
 /*=============== SHOW SIDEBAR ===============*/
 const navMenu = document.getElementById('sidebar'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
+    navToggle = document.getElementById('nav-toggle'),
+    navClose = document.getElementById('nav-close')
 
 /*===== SIDEBAR SHOW =====*/
 
-if(navToggle) {
+if (navToggle) {
     navToggle.addEventListener("click", () => {
         navMenu.classList.add('show-sidebar')
     })
@@ -13,7 +13,7 @@ if(navToggle) {
 
 /*===== SIDEBAR HIDDEN =====*/
 
-if(navClose) {
+if (navClose) {
     navClose.addEventListener("click", () => {
         navMenu.classList.remove('show-sidebar')
     })
