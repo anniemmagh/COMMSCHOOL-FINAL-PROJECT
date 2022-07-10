@@ -117,7 +117,7 @@ input {
 .sidebar {
     position: fixed;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(11,11,222,1) 41%, rgba(24,175,205,1) 75%, rgba(3,155,246,1) 96%); 
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(11,11,222,1) 41%, rgb(20, 140, 164) 75%, rgb(21, 110, 161) 96%); 
     width: 100px;
     height: 100vh;
     border-right: 1px solid var(--box-color);
