@@ -116,9 +116,10 @@ input {
 /* ====sidebar==== */
 .sidebar {
     position: fixed;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 6%, rgba(11,11,222,1) 10%, rgba(24,175,205,1) 95%, rgba(3,155,246,1) 97%); 
     width: 100px;
     height: 100vh;
-    background-color: var(--body-color);
     border-right: 1px solid var(--box-color);
     transition: .5s;
 }
@@ -248,7 +249,7 @@ input {
 
 /* home section */
 .home {
-    background: url();
+    
     background-size: cover;
     background-position: center center;
     height: 100vh;
