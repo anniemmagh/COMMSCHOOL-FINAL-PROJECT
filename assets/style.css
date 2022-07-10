@@ -924,16 +924,21 @@ textarea.input {
 /* Footer css */
 .footer {
     padding-top: 0rem;
+    
 }
 
 .footer__container {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1.6rem;
+    
+    
 }
 
 .footer__bg {
     background-color: var(--box-color);
     padding: 3rem 0 3.5rem;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,175,205,1) 34%, rgba(11,11,222,1) 64%, rgba(3,155,246,1) 96%); 
 }
 
 .footer__title {
@@ -949,6 +954,7 @@ textarea.input {
     display: flex;
     justify-self: center;
     column-gap: 2rem;
+    color: white;
 }
 
 .footer__link:hover {
