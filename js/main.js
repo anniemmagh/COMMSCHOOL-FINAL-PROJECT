@@ -50,7 +50,15 @@ let mixerPortfolio = mixitup('.work__container', {
         duration: 300
     }
 });
-
+/*=============== mixitup ===============*/
+let Portfolio = mixitup('.work__container', {
+    selectors: {
+        target: '.work__card'
+    },
+    animation: {
+        duration: 300
+    }
+});
 /*===== Link Active Work =====*/
 const linkWork = document.querySelectorAll('.work__item')
 
@@ -63,7 +71,7 @@ linkWork.forEach(l=> l.addEventListener("click", activeWork))
 
 /*===== Work Popup =====*/
 document.addEventListener("click", (e) => {
-    if(e.target.classList.contains("work__button")) {
+    if (e.target.classList.contains("work__button")) {
         togglePortfolioPopup();
         portfolioItemDetails(e.target.parentElement);
     }
@@ -81,7 +89,6 @@ function portfolioItemDetails(portfolioItem) {
     document.querySelector(".portfolio__popup-subtitle span").innerHTML = portfolioItem.querySelector(".work__title").innerHTML;
     document.querySelector(".portfolio__popup-body").innerHTML = portfolioItem.querySelector(".portfolio__item-details").innerHTML;
 }
-
 /*=============== INPUT ANIMATION ===============*/
 const inputs = document.querySelectorAll(".input");
 
