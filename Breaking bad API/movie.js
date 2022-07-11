@@ -11,16 +11,17 @@ inpSearch.addEventListener('change', () => {
     loader();
     fetchCharcters(searchQuery);
 });
-function loader(){
+
+function loader() {
     output.innerHTML = '<div class="gif-spinner mx-auto"><img src="img/loader.webp"></img></div>'
 }
 
-async function fetchCharcters(query){
+async function fetchCharcters(query) {
     let res;
 
-    if(query){
+    if (query) {
         res = await fetch(`https://www.breakingbadapi.com/api/characters?name=${query}`);
-    }else{
+    } else {
         res = await fetch('https://www.breakingbadapi.com/api/characters');
     }
 
@@ -38,10 +39,10 @@ async function fetchCharcters(query){
                 <h6>Birthday: <span>${result.birthday}</span></h6>
                 <h6>Status: <span>${result.status}</span></h6>
             </div>`;
-    
-    let outputString = document.createElement('div');
-    outputString.classList.add('col-md-3', 'mb-3', 'img-info');
-    outputString.innerHTML = htmlString;
-    output.appendChild(outputString);
+
+        let outputString = document.createElement('div');
+        outputString.classList.add('col-md-3', 'mb-3', 'img-info');
+        outputString.innerHTML = htmlString;
+        output.appendChild(outputString);
     });
 }
