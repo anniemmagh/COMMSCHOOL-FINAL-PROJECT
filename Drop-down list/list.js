@@ -1,10 +1,12 @@
-let toggleMenu = document.querySelectorAll(".panel-heading");
+window.onscroll = function() {myFunction()};
 
-toggleMenu.forEach(function (items) {
-  items.addEventListener("click", function () {
-    this.classList.toggle("change_icon");
-    let thisParent = items.closest(".panels");
-    let thisContent = thisParent.children[1];
-    thisContent.classList.toggle("collapse");
-  });
-});
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}

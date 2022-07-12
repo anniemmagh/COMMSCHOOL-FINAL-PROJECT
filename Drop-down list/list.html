@@ -9,42 +9,39 @@
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo"><img src="https://i.guim.co.uk/img/media/02c5fc2b42591243e6292fc83f8a97ed78807b57/198_0_2000_1200/master/2000.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=d31d7a8f045e54151b84076280aebca8"></div>
-        <div class="push-left">
-          <button id="menu-toggler" data-class="menu-active" class="hamburger">
-            <span class="hamburger-line hamburger-line-top"></span>
-            <span class="hamburger-line hamburger-line-middle"></span>
-            <span class="hamburger-line hamburger-line-bottom"></span>
-          </button>
-      
-          <!--  Menu compatible with wp_nav_menu  -->
-          <ul id="primary-menu" class="menu nav-menu">
-            <li class="menu-item current-menu-item"><a class="nav__link"  href="#">Home</a></li>
-            <li class="menu-item dropdown"><a class="nav__link"  href="#">About</a>
-               <ul class="sub-nav" >
-                <li><a class="sub-nav__link" href="#">one</a></li>
-                <li><a class="sub-nav__link" href="#">two</a></li>
-                <li><a class="sub-nav__link" href="#">three</a></li>
-              </ul>
-      
-            </li>
-            <li class="menu-item dropdown"><a class="nav__link"  href="#">Contact</a>
-              <ul class = "sub-nav">
-                <li><a class="sub-nav__link"  href="#">one</a></li>
-                <li><a class="sub-nav__link"  href="#">two/a></li>
-                <li><a class="sub-nav__link"  href="#">three</a></li>
-              </ul>
-            </li>
-            <li class="menu-item "><a class="nav__link"  href="#">Blog</a>
-             
-            </li>
-          </ul>
-      
-      
+
+<div>
+    <div class="test">
+        <input type="checkbox" class="menu-toggle" id="menu-toggle">
+        <div class="mobile-bar">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+            </label>
         </div>
-      </nav>
-      
+
+        <header class="header">
+            <nav>
+                <ul>
+                    <li><a href="#">one</a></li>
+                    <li><a href="#">two</a></li>
+                    <li><a href="#">three</a></li>
+                    <li>
+                        <a href="#">
+                            <p>Login</p>
+                        </a>
+                    </li>
+                    <li><a href="#" class="fancy-button pop-onhover bg-gradient3"><span>Sign Up</span></a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <a class="navbar-brand" href="https://codepen.io/conorjmcnamara/" style="padding:0px;">
+            <img src="https://i.guim.co.uk/img/media/02c5fc2b42591243e6292fc83f8a97ed78807b57/198_0_2000_1200/master/2000.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=d31d7a8f045e54151b84076280aebca8">
+        </a>
+
+    </div>
+</div>
 
 <script src="list.js"></script>
 </body>
