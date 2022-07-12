@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: rgb(30,74,115);
+    background: linear-gradient(90deg, rgba(30,74,115,1) 0%, rgba(0,11,36,1) 2%, rgba(44,139,218,1) 100%, rgba(24,108,205,1) 100%); 
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin-top: 50px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .title {
+    font-size: 45px;
+    color: #d9d9d9;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+      1px 1px 1px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .panels.panel-default {
+    padding: 0 15px;
+  }
+  
+  .relative {
+    position: relative;
+  }
+  
+  .panels {
+    padding-bottom: 10px;
+  }
+  
+  .panel-heading {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 60px;
+    background-color: transparent;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 28px;
+    border: 2px solid #fff;
+    color: #000;
+    border-radius: 4px;
+    background: #e0e0e0;
+    background: rgb(30,74,115);
+    background: linear-gradient(90deg, rgba(30,74,115,1) 0%, rgba(0,11,36,1) 2%, rgba(0,0,0,1) 100%, rgba(24,108,205,1) 100%); 
+  }
+  
+  .panel-title {
+    position: relative;
+    margin-bottom: 0;
+    font-size: 18px;
+    color: rgb(252, 242, 242);
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  
+  .panel-heading:after {
+    content: "\27AD";
+    color: rgb(0, 0, 0);
+    top: calc(50% - 19px);
+    right: 20px;
+    position: absolute;
+    transition: all 0.3s ease;
+    transform-origin: 10px 19px;
+  }
+  
+  .panel-heading.change_icon::after {
+    content: "\27AD";
+    transform: rotate(90deg);
+    transition: all 0.3s ease;
+  }
+  
+  .panel-body__list li {
+    list-style-type: none;
+    margin-bottom: 4px;
+    line-height: 21px;
+    letter-spacing: 1.2px;
+    position: relative;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 20px;
+    border-radius: 4px;
+    background: #fcfcfc;
+    box-shadow: -8px 10px 30px #fff, 0 10px 30px #444444;
+  }
+  
+  .panels .panel-collapse {
+    position: relative;
+    overflow-y: auto;
+    max-height: 0;
+    transition: max-height 0.3s ease, margin-bottom 0.2s ease-in;
+  }
+  
+  .panel-collapse.collapse {
+    max-height: 1000px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .container {
+      max-width: 100%;
+      width: auto;
+    }
+  
+    .title {
+      font-size: 45px;
+    }
+  }
+  
