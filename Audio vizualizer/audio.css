@@ -13,7 +13,7 @@ body {
   }
   label {
     display: inline-block;
-    background-color: rgb(150, 150, 205);
+    background-color: rgb(169, 205, 150);
     padding: 16px;
     border-radius: 0.3rem;
     cursor: pointer;
