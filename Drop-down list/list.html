@@ -3,89 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drop-down list</title>
+    <title>Drop-down</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="list.css">
 </head>
 <body>
 
-<div class="slider-conatiner"><div class="container">
-
-    <h1 class="title">Responsive Drop-down</h1>
-  
-    <div class="panels">
-  
-      <div class="relative">
-        <div class="panel-heading">
-          <h4 class="panel-title">Title 1</h4>
-        </div>
-      </div>
-  
-      <div class="panel-collapse">
-        <div class="panel-body">
-  
-          <ul class="panel-body__list">
-            <li>1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam pariatur unde maiores tenetur aut odio maiores tenetur aut odio?</li>
-            <li>2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam pariatur unde maiores tenetur aut odio?</li>
-            <li>3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam pariatur unde maiores tenetur unde maiores tenetur aut odio?</li>
-            <li>4. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam pariatur unde maiores maiorestenetur aut odio?</li>
+    <nav class="navbar">
+        <div class="logo"><img src="https://i.guim.co.uk/img/media/02c5fc2b42591243e6292fc83f8a97ed78807b57/198_0_2000_1200/master/2000.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=d31d7a8f045e54151b84076280aebca8"></div>
+        <div class="push-left">
+          <button id="menu-toggler" data-class="menu-active" class="hamburger">
+            <span class="hamburger-line hamburger-line-top"></span>
+            <span class="hamburger-line hamburger-line-middle"></span>
+            <span class="hamburger-line hamburger-line-bottom"></span>
+          </button>
+      
+          <!--  Menu compatible with wp_nav_menu  -->
+          <ul id="primary-menu" class="menu nav-menu">
+            <li class="menu-item current-menu-item"><a class="nav__link"  href="#">Home</a></li>
+            <li class="menu-item dropdown"><a class="nav__link"  href="#">About</a>
+               <ul class="sub-nav" >
+                <li><a class="sub-nav__link" href="#">one</a></li>
+                <li><a class="sub-nav__link" href="#">two</a></li>
+                <li><a class="sub-nav__link" href="#">three</a></li>
+              </ul>
+      
+            </li>
+            <li class="menu-item dropdown"><a class="nav__link"  href="#">Contact</a>
+              <ul class = "sub-nav">
+                <li><a class="sub-nav__link"  href="#">one</a></li>
+                <li><a class="sub-nav__link"  href="#">two/a></li>
+                <li><a class="sub-nav__link"  href="#">three</a></li>
+              </ul>
+            </li>
+            <li class="menu-item "><a class="nav__link"  href="#">Blog</a>
+             
+            </li>
           </ul>
-  
+      
+      
         </div>
-      </div>
-  
-    </div>
-  
-    <div class="panels">
-  
-      <div class="relative">
-        <div class="panel-heading">
-          <h4 class="panel-title">Title  2</h4>
-        </div>
-      </div>
-  
-      <div class="panel-collapse">
-        <div class="panel-body">
-  
-          <ul class="panel-body__list">
-            <li>1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam pariatur ?</li>
-            <li>2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam pariatur unde maiores tenetur aut odio?</li>
-            <li>3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam pariatur unde maiores tenetur aut odio?</li>
-            <li>4. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>5. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam pariatur aut odio?</li>
-            <li>6. Lorem, ipsum dolor sit amet consectetur. Ipsam pariatur unde maiores tenetur aut odio?</li>
-            <li>7. Lorem, ipsum dolor sit amet consectetur. Ipsam pariatur unde maiores tenetur aut odio?</li>
-            <li>8. Lorem, ipsum dolor sit amet consectetur. Ipsam pariatur tenetur aut odio?</li>
-          </ul>
-  
-        </div>
-      </div>
-  
-    </div>
-  
-    <div class="panels">
-  
-      <div class="relative">
-        <div class="panel-heading">
-          <h4 class="panel-title">Title  3</h4>
-        </div>
-      </div>
-  
-      <div class="panel-collapse">
-        <div class="panel-body">
-  
-          <ul class="panel-body__list">
-            <li>1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam pariatur ?</li>
-            <li>2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam pariatur unde maiores tenetur aut odio?</li>
-            <li>3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam pariatur unde maiores tenetur aut odio?</li>
-          </ul>
-  
-        </div>
-      </div>
-  
-    </div>
-  
-  </div>
+      </nav>
+      
 
 <script src="list.js"></script>
 </body>
