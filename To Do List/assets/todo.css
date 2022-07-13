@@ -1,3 +1,4 @@
+
 .to-do-list {
     position: absolute;
 
@@ -13,6 +14,8 @@
     padding: 2vh;
 
     font-family: Arial;
+    background: rgb(30,74,115);
+    background: linear-gradient(90deg, rgba(30,74,115,1) 0%, rgba(24,108,205,1) 100%, rgba(11,249,232,1) 100%, rgba(0,0,0,1) 100%); 
 }
 
 .list-title {
