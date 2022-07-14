@@ -15,4 +15,4 @@ $Projects :
 
 © Ani Maghlakvelidze | 2022 | 
 https://www.linkedin.com/in/ani-maghlakvelidze/ 
-https://github.com/anniemmagh
+https://github.com/anniemmagh 
