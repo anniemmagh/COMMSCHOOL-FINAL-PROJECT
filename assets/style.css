@@ -333,7 +333,8 @@ input {
 .home__description {
     max-width: 450px;
     margin-bottom: var(--mb-2);
-    
+    font-weight: bold;
+    font-size: 20px;
     
 }
 
