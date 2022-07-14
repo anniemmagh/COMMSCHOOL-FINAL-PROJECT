@@ -87,24 +87,21 @@ img {
 .bg-gradient1 span,
 .bg-gradient1:before {
     background: #52a0fd;
-    background: -moz-linear-gradient(left, #52a0fd 0%, #00e2fa 80%, #00e2fa 100%);
-    background: -webkit-linear-gradient(left, #52a0fd 0%, #00e2fa 80%, #00e2fa 100%);
-    background: linear-gradient(to right, #52a0fd 0%, #00e2fa 80%, #00e2fa 100%);
+    background: rgb(5, 49, 130);
+    background: linear-gradient(90deg, rgba(5, 49, 130, 1) 0%, rgba(50, 133, 231, 1) 5%, rgba(33, 141, 208, 1) 16%, rgba(27, 228, 235, 1) 100%);
 }
 
 .bg-gradient3 span,
 .bg-gradient3:before {
     background: #fa6c9f;
-    background: -moz-linear-gradient(left, #fa6c9f 0%, #ffe140 80%, #ffe140 100%);
-    background: -webkit-linear-gradient(left, #fa6c9f 0%, #ffe140 80%, #ffe140 100%);
-    background: linear-gradient(to right, #fa6c9f 0%, #ffe140 80%, #ffe140 100%);
+    background: rgb(5, 49, 130);
+    background: linear-gradient(90deg, rgba(5, 49, 130, 1) 0%, rgba(50, 133, 231, 1) 5%, rgba(33, 141, 208, 1) 16%, rgba(27, 228, 235, 1) 100%);
 }
 
 .wrapper {
     margin: 0% auto;
     text-align: center;
-    transform-style: perserve-3d;
-    perspecive: 400px;
+
 }
 
 a {
@@ -154,7 +151,7 @@ a:active {
     border-radius: 50em;
     position: relative;
     z-index: 2;
-    will-change: transform, filter;
+ 
     transform-style: preserve-3d;
     transition: all 0.3s ease-out;
 }
@@ -355,10 +352,10 @@ p {
 .header li {
     border-bottom: 1px solid #eee;
     color: #505050;
-    /*text on navbar*/
+   
     font-weight: 430;
     line-height: 2.4;
-    /*height of the navbar*/
+ 
     font-size: 15px;
     letter-spacing: 0.2px;
     font-weight: 600;
@@ -387,7 +384,7 @@ p {
     top: 13.45px;
     left: 0;
     padding: 0 25px;
-    /*BAR HOW MUCH IN RIGHT*/
+
     background-color: white;
 }
 
@@ -416,12 +413,12 @@ p {
     .header li {
         display: inline-block;
         margin-right: -6px;
-        /* fix the inline-block gap */
+      
         border: none;
         text-align: left;
     }
     .header a {
         padding: 15px 35px;
-        /*header height and text spacing*/
+        
     }
 }
