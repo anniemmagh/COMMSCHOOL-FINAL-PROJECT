@@ -116,8 +116,8 @@ input {
 /* ====sidebar==== */
 .sidebar {
     position: fixed;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(11, 11, 222, 1) 41%, rgb(20, 140, 164) 75%, rgb(21, 110, 161) 96%);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(11,11,222,1) 41%, rgb(20, 140, 164) 75%, rgb(21, 110, 161) 96%); 
     width: 100px;
     height: 100vh;
     border-right: 1px solid var(--box-color);
@@ -249,7 +249,7 @@ input {
 
 /* home section */
 .home {
-
+    
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -307,26 +307,23 @@ input {
 
 .home__title {
     font-size: var(--biggest-font-size);
-    color: var(--skin-color);
-    transition: all 0.5s;
-    animation: rotate 8s ease-in infinite;
-    animation-direction: alternate;
-    letter-spacing: 0.5vw;
-    -webkit-text-stroke: 1.5px var(--skin-color);
+    color:var(--skin-color);
+	transition:all 0.5s;
+	animation: rotate 8s ease-in infinite;
+	animation-direction: alternate;
+	letter-spacing: 0.5vw;
+	-webkit-text-stroke: 1.5px var(--skin-color);
 }
-
-@keyframes rotate {
-    0% {
-        transform: rotateY(90deg);
-        text-shadow: 0 0 0 var(--skin-color);
-    }
-
-    100% {
-        transform: rotateY(0deg);
-        text-shadow: 0.1em 0.1em .05em var(--skin-color);
-    }
+@keyframes rotate{
+	0%{
+		transform:rotateY(90deg);
+		text-shadow:0 0 0 var(--skin-color);
+	}
+	100%{
+		transform:rotateY(0deg);
+		text-shadow:0.1em 0.1em .05em var(--skin-color);
+	}
 }
-
 .home__subtitle {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
@@ -336,8 +333,8 @@ input {
 .home__description {
     max-width: 450px;
     margin-bottom: var(--mb-2);
-
-
+    
+    
 }
 
 .my__info {
@@ -346,7 +343,7 @@ input {
     column-gap: 1.8rem;
     left: 0;
     bottom: 1.8rem;
-
+    
 
 }
 
@@ -808,7 +805,7 @@ input {
     padding: 1rem;
     border-radius: .5rem;
     text-align: center;
-
+    
 }
 
 .contact__card-icon {
@@ -855,8 +852,8 @@ input {
     position: relative;
     margin-top: .1rem;
     margin-bottom: 1.9rem;
-    background: rgb(5, 49, 130);
-    background: linear-gradient(90deg, rgba(5, 49, 130, 1) 0%, rgba(50, 133, 231, 1) 5%, rgba(33, 141, 208, 1) 16%, rgba(27, 228, 235, 1) 100%);
+    background: rgb(5,49,130);
+    background: linear-gradient(90deg, rgba(5,49,130,1) 0%, rgba(50,133,231,1) 5%, rgba(33,141,208,1) 16%, rgba(27,228,235,1) 100%); 
 }
 
 .input {
@@ -948,21 +945,21 @@ textarea.input {
 /* Footer css */
 .footer {
     padding-top: 0rem;
-
+    
 }
 
 .footer__container {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1.6rem;
-
-
+    
+    
 }
 
 .footer__bg {
     background-color: var(--box-color);
     padding: 3rem 0 3.5rem;
-    background: rgb(27, 228, 235);
-    background: linear-gradient(90deg, rgba(27, 228, 235, 1) 0%, rgba(50, 133, 231, 1) 5%, rgba(33, 141, 208, 1) 16%, rgba(5, 49, 130, 1) 97%);
+    background: rgb(27,228,235);
+    background: linear-gradient(90deg, rgba(27,228,235,1) 0%, rgba(50,133,231,1) 5%, rgba(33,141,208,1) 16%, rgba(5,49,130,1) 97%); 
 }
 
 .footer__title {
