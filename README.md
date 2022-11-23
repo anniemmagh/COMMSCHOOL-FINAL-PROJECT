@@ -1,5 +1,4 @@
-# Hi, I am Ani, Motivated junior Front end developer  with experience building unbreakable and elegant JavaScript Projects looking for an opportunity to grow front-end development skills in an innovative environment.
-And this is my first portfolio website which was created as a course final project for  TBILISI SCHOOL OF COMMUNICATION (intro to Front-end Development)
+# This is my first portfolio website which was created as a course final project for  TBILISI SCHOOL OF COMMUNICATION (intro to Front-end Development)
 # https://anniemmagh.netlify.app/
 # USED OPEN SOURCES AND OTHER :
 
