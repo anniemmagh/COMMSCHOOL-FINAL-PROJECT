@@ -394,31 +394,3 @@ p {
     position: fixed;
 }
 
-@media (min-width: 1000px) {
-    .mobile-bar {
-        display: none;
-    }
-    .header {
-        z-index: 5;
-        position: relative;
-        left: 0;
-        padding-top: 0;
-        width: 100%;
-        height: auto;
-        overflow: auto;
-        visibility: visible;
-        opacity: 1;
-        text-align: right;
-    }
-    .header li {
-        display: inline-block;
-        margin-right: -6px;
-      
-        border: none;
-        text-align: left;
-    }
-    .header a {
-        padding: 15px 35px;
-        
-    }
-}
